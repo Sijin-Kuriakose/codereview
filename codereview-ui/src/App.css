@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+}
+
+button {
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  margin: 20px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  text-align: center;
+}
+
+.card.high { border-left: 4px solid red; }
+.card.medium { border-left: 4px solid orange; }
+.card.low { border-left: 4px solid green; }
+
+.summary {
+  background: #1e293b;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.issue-card {
+  background: #1e293b;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #38bdf8;
+}
+
+.issue-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.badge.high { color: red; }
+.badge.medium { color: orange; }
+.badge.low { color: green; }
+
+.code-block {
+  background: #020617;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.ai-box {
+  margin-top: 10px;
+  padding: 10px;
+  background: #0f172a;
+  border-left: 4px solid #22c55e;
+}
